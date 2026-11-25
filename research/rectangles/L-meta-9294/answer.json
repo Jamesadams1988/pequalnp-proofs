@@ -1,0 +1,111 @@
+{
+  "rows": [
+    126,
+    413,
+    683,
+    839,
+    483,
+    725,
+    825,
+    822,
+    730,
+    492
+  ],
+  "one_entries": 60,
+  "maximal_rectangles": 110,
+  "area_histogram": {
+    "6": 80,
+    "8": 30
+  },
+  "searches": [
+    {
+      "budget": 8,
+      "exists": false,
+      "cumulative_memoized_states": 328
+    },
+    {
+      "budget": 9,
+      "exists": false,
+      "cumulative_memoized_states": 81552
+    },
+    {
+      "budget": 10,
+      "exists": true,
+      "cumulative_memoized_states": 82508
+    }
+  ],
+  "minimum_cover": 10,
+  "mask_pairs": [
+    [
+      149,
+      34
+    ],
+    [
+      163,
+      20
+    ],
+    [
+      839,
+      8
+    ],
+    [
+      825,
+      64
+    ],
+    [
+      126,
+      1
+    ],
+    [
+      822,
+      128
+    ],
+    [
+      650,
+      260
+    ],
+    [
+      396,
+      514
+    ],
+    [
+      720,
+      288
+    ],
+    [
+      480,
+      528
+    ]
+  ],
+  "maximum_fooling_set": 7,
+  "fooling_cells": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      9
+    ]
+  ]
+}
