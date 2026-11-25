@@ -47,4 +47,21 @@ done
 
 The Lean reduction below packs 128 positive/negative pairs into 256-bit words. The sample covers all 64 assignments. Lean verifies the six input words, coverage of every possible first gate and the implication from the resulting 60 branch obligations to monotone replacement. Each outstanding obligation excludes the target with ten binary gates left after that first move. Discharging these obligations is sufficient for the public positive conjecture. Certifying the separate twelve-gate monotone exclusion is only needed for the exact minimum. [Lean reduction and 60 branches](SignedFrontier.lean) · [Upstream signed-circuit checker used by the reduction](https://github.com/open-goat/pequalnp-proofs/blob/ae067003624a27d3205bb5194ddb4bc50bde97c5/lean/PEqualNP/Outside/L_meta_14930.lean)
 
-The reduction imports Mathlib and the project's definitions. Replay it in the same upstream environment with `lake env lean "$research_dir/SignedFrontier.lean"`.
+The reduction imports the project's definitions. Replay it in the same upstream environment with `lake env lean "$research_dir/SignedFrontier.lean"`.
+
+### Partial certificates for first-gate case 13
+
+In this case the first gate is the OR of inputs 0 and 4, and both inputs are available for later use. Lean checks the circuit witness together with the exact posted conclusion under the remaining first-gate hypotheses. The combined development used only the allowed `PEqualNP.Defs` import when tested as one file. [Conditional theorem](FrontierGoal.lean)
+
+A state is impossible if two original inputs have opposite required outputs but equal values on every available wire. Future gates must give both inputs the same result. Lean proves this for every remaining gate budget and proves that testing the condition leaves the search result unchanged. One actual descendant passes the original 128 pair tests yet cannot distinguish input rows 8 and 25. [General proof](Prune.lean) · [Packed row test](MaskPrune.lean) · [Search equivalence](PrunedSearch.lean) · [Checked example](Head13.lean)
+
+Lean closes a subtree with eight gates remaining and several subtrees with seven gates remaining. The path indices below are zero-based positions among the admitted choices at each level.
+
+| Path starting at first-gate case 13 | Evidence |
+|---|---|
+| 13 → 27 → 66 | Both transitions are admitted. Lean rules out the entire remaining eight-gate search. [Eight-gate certificate](Child27Case.lean) |
+| 13 → 0 → 1 | Sixteen distinct children of this state are admitted and excluded with seven gates remaining. [Grouped exclusions](SmallGroup.lean) |
+| 13 → 0 → 1 → 102 | All four transitions on the path to a terminal state were verified. The seven-gate parent is also excluded. [Kernel proof](Branch13.lean) |
+| 13 → 0 → 12 → 55 | The exact generator gives 73 next choices. Lean verifies their six-gate exclusions in contiguous groups and then rejects the parent. [Generator and group proof](CompactLayer.lean) · [Uniform groups](UniformChunks.lean) · [Subtree certificate](UniformPilot.lean) |
+
+Run `bash "$research_dir/replay_lean.sh"` from the pinned upstream `lean/` directory to compile these modules in dependency order. Input permutations of the first three variables and the last two variables preserve the target. Lean checks that these twelve permutations reduce the 60 first-gate cases to **18 representatives**. A proof of the ten-gate exclusion for each representative now suffices for the exact posted theorem. All eighteen representative cases remain open in Lean. [Symmetry proof](Symmetry.lean) · [Exact conditional statement](FrontierGoal.lean)
