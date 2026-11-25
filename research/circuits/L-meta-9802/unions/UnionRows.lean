@@ -1,0 +1,5 @@
+import Mathlib.Data.List.Pairwise
+namespace Row9802.Unions
+
+def rows : List Nat := [131233, 262466, 524934, 1293, 2584, 5170, 10340, 20680, 41360, 82720, 165440, 330880, 661760, 274945, 549888, 51203, 102404, 204810, 409620, 819240]
+end Row9802.Unions
