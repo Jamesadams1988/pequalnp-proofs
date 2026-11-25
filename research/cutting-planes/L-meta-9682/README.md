@@ -1,0 +1,29 @@
+# How many lines does the four-pigeon, three-hole refutation need?
+
+Research by James Adams. In the project's cutting-planes system, 52 lines suffice to refute the formula placing four pigeons in three holes. The merged proof by harshb16 rules out 48 lines or fewer. The possible minima are **49, 50, 51, and 52**. The desk asks whether 51 lines suffice. [52-line Lean certificate](Control.lean) · [Upstream lower bound](https://github.com/open-goat/pequalnp-proofs/pull/16368) · [Desk statement](https://data.pequalnp.com/data/lemma/L-meta-9682.549ce929eed1.json)
+
+## What the first division round achieves
+
+Before rounding, sum or multiply any number of available inequalities by nonnegative integers. A legal division divides all variable coefficients exactly and rounds the constant upward. Inequalities derived by dividing an unrounded line may be combined freely in the first round. The only real assignment satisfying every resulting inequality is the point with all twelve entries equal to **one third**. A second division round derives the contradiction. The exact minimum rounding depth is therefore **two**. The 52-line certificate uses six divisions across those two layers. [Singleton theorem](RealClosurePoint.lean) · [Exact depth](RankTwo.lean)
+
+To see uniqueness, fix a hole and three pigeons. Their three pairwise collision inequalities add to twice the total occupancy of the triangle being at most three. Divide by two to get a triangle sum of at most one. Summing the twelve triangles counts each variable three times, giving total occupancy at most four. The four pigeon rows require total occupancy at least four, so every triangle bound is tight. Comparing triangles in one column forces its four entries to agree, hence to equal one third. For the converse, the proof constructs a feasible point with half-integral entries for every integral objective. These witnesses show the all-thirds point survives even inequalities mixing several holes before division. [Triangle derivations](FirstClosurePoint.lean) · [Support argument](GlobalRank.lean) · [Connection to project rules](CPRank.lean)
+
+Each of the twelve individual triangles is needed when added to the original inequalities alone. Dropping any one permits an explicit denominator-six counterexample. An alternative description aggregates the four triangles of one column into a single inequality. That aggregate, the eight triangles of the other columns, and the four pigeon rows still isolate the point. For larger formulas, putting a third on each of any three distinct holes chosen separately per row survives first-round rounding. Averaging gives a uniform witness for every number of holes at least three. [Triangle controls](TriangleGeometry.lean) · [General support theorem](TripleSupport.lean)
+
+## Where a shorter proof could save a line
+
+Deriving one hole's capacity from its six pair clauses takes exactly **14 lines**, including the premises. This lower bound covers every official inference rule, arbitrary legal divisors, repeated uses of intermediate lines, and both Boolean variable bounds. It uses the upstream trace infrastructure from L-meta-9672. The usual 14-line construction sums and rounds a triangle, doubles it, adds the three remaining pair clauses, and divides by three. Three independent capacities, four pigeon premises, and six final additions cost 52 lines. A proof saving a line must change that arrangement. [Formal lower bound](TraceTree.lean) · [Matching derivation](Capacity14.lean) · [Upstream dependency](https://github.com/open-goat/pequalnp-proofs/blob/dd52388f4cea42ee8fdb28720e1c9510be8e1d06/lean/PEqualNP/Outside/L_meta_9672.lean)
+
+Two further approaches also reach 52 under their stated restrictions. One first establishes capacities for two holes and then reasons only with the last hole's occupancy and pair clauses. The other computes a triangle and the sum of the three remaining pairs separately in each hole, with different excluded pigeons, and uses each resulting input once. The residual catalog is checked in Lean. The graph counts and mixed-triangle enumeration have separate mathematical arguments and executable controls. A remaining route is to reuse an intermediate inequality involving pairs in different holes before forming individual capacities. [Restricted strategies and replay](local-strategies.md)
+
+A different proof forces one Boolean variable strictly between zero and one. Six triangle cuts give `1/6 ≤ x₀₀ ≤ 5/6`, which rounds to a contradiction in a 65-line certificate. Six is the minimum number of primitive triangles that can force this one-variable split. Exact rational endpoint witnesses cover all 792 five-triangle selections, grouped into 97 symmetry classes. [Lean derivation](Interval65.lean) · [Exact checks](interval/verify_interval.py)
+
+## Reproduce the checks
+
+Use the upstream Lean project at commit `dd52388f4cea42ee8fdb28720e1c9510be8e1d06`, Lean 4.36.0 and its pinned Mathlib. From this folder run the command below, supplying the root of the upstream checkout's Lean project. The replay builds the upstream prerequisites, regenerates the finite catalogs and the 52-line witness, and compiles this folder's Lean modules in a temporary directory. Python 3.10 or newer is sufficient for the main replay. The optional mixed-triangle audit also uses SymPy.
+
+```sh
+./replay.sh /path/to/pequalnp-proofs/lean
+```
+
+To test a proposed shorter refutation, give its chronological instruction list to `python3 tools/encode_cp.py candidate.json`. The generator emits a Lean source with explicit premise selections, rule applications, and a final line count. The default example takes 52 lines. For a family-level control, `tools/php_family.py` checks constructions with two through ten holes against the length formula `n³ + 3n² − n + 1`. [Encoder and input format](tools/encode_cp.py) · [Family construction](tools/php_family.py)
