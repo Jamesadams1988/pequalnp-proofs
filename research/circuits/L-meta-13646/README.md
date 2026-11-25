@@ -38,3 +38,17 @@ python3 pack_refutation.py "$upstream" "$upstream/$proof" &&
 ```
 
 The official local verifier returned `ACCEPTED (refute)` for source SHA-256 `80f8aaa9187860cafabe4cb965bf622dc8c0a452f2555d8e960aab7d2c647b32`. It rechecked 2,173 constants and reported only `propext`, `Quot.sound` and `Classical.choice`.
+
+## Find a restriction for another pair of tables
+
+Given a six-input table and a five-input table with a known circuit lower bound, `match_cofactor.py` tries each essential input, both pin values and all 120 permutations of the five remaining coordinates. On the first nonconstant match it prints the pin, the map from six coordinates to five labels, and concrete rows witnessing essentiality and nonconstancy. The pinned coordinate’s label is overwritten. [Matcher](match_cofactor.py) · [Regression tests](test_match_cofactor.py)
+
+```sh
+python3 match_cofactor.py 0xeeeaeaeaeee0e8e0 0xeaaac880
+python3 match_cofactor.py --lean 0xeeeaeaeaeee0e8e0 0xeaaac880 > PinnedMatch.lean
+python3 -m unittest test_match_cofactor
+```
+
+Check `PinnedMatch.lean` with `lake env lean /path/to/PinnedMatch.lean` from the pinned upstream `lean/` directory with `PEqualNP.Defs` built. It proves the three hypotheses named `essential`, `image` and `nonconstant`. Given a lower bound on the five-input function, `CofactorBound.ofPinnedImage` uses these hypotheses to raise the bound by one. The matcher uses bijections of the free inputs. Exit status 1 means that search found no match. Identifying free inputs or complementing inputs or outputs requires a different search.
+
+For L-meta-13646, the first result is x2=false and `![0,2,0,1,3,4]`. Pairing it with Noptus’s lower bound gives eight. A second example comes from trimbe’s merged L-meta-12941. For `0xeaaae888e8888000` and `0xeae8e880`, the matcher finds x2=true and `![0,1,0,2,3,4]`. The published five-input bound there is ten. Both examples reproduce previously published restrictions. [Noptus’s proof](https://github.com/open-goat/pequalnp-proofs/pull/12814) · [trimbe’s proof](https://github.com/open-goat/pequalnp-proofs/pull/16874)
