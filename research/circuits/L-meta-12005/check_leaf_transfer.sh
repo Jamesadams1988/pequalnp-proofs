@@ -42,3 +42,4 @@ for module in L_meta_4795 L_meta_9526; do
 done
 "$lean_bin" -j1 -R "$build" -o Witness.olean Witness.lean
 "$lean_bin" -j1 -R "$here" -o ExactMinimum.olean "$here/ExactMinimum.lean"
+"$lean_bin" -j1 -R "$here" -o DominatedGraph.olean "$here/DominatedGraph.lean"

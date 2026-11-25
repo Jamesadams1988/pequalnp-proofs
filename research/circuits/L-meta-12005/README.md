@@ -12,6 +12,16 @@ Fix leaf 3 to whichever value saves two gates. In both branches its neighbor 0 i
 
 To replay from this directory, use the project's pinned Lean 4.36.0 with Mathlib and `PEqualNP.Defs` built, then run `bash check_leaf_transfer.sh ../../../lean`. The script checks the source hashes, rebuilds both imported proofs in a temporary directory, and prints the axiom dependencies of the reusable lemma and the exact minimum. [Replay script](check_leaf_transfer.sh)
 
+## A three-gate bound for other graphs
+
+For the Boolean function that detects an edge among selected vertices of a finite simple graph, write `N(p)` for the neighbors of vertex `p`. Suppose `N(p)` is nonempty and is a proper subset of `N(q)`. Given any unrestricted circuit of size at most `s` for this function, the function with `q` fixed to true has a circuit of size at most `s − 3`. In particular, a lower bound of `L` gates for the restricted function gives a lower bound of `L + 3` for the original. James Adams's Lean theorem proves this implication for all finite simple graphs in the project's fan-in-two model. [Lean proof](DominatedGraph.lean)
+
+Once `q` is true, any edge detected through `p` can also be detected through `q`. A neighbor of `q` outside `N(p)` witnesses that changing `q` can change the output for either fixed value of `p`. Strict inclusion matters. In the three-vertex path with endpoints `p` and `q`, the endpoints have the same neighbors, and changing `q` has no effect once `p` is true.
+
+The Lean replay command above also checks this graph theorem. Run `python3 verify_graph_pins.py` for an independent truth-table test of both pin values on all 1,100 labeled simple graphs with zero through five vertices. It compares the graph criteria with the literal hypotheses on 21,300 ordered vertex pairs. [Finite replay and controls](verify_graph_pins.py)
+
+To screen a saved public desk export, run `python3 screen_graph_pins.py /path/to/gaps.json`. Add `--show-hits` to print the vertex pairs. The scanner recognizes flat numeric edge lists, typed pairs and explicit edge disjunctions. It groups by vertex count and labeled edge set. A match identifies a lower-bound proof step. A complete proof still needs a bound for the restricted function, and the desk determines assignment availability. [Scanner](screen_graph_pins.py) · [Desk export](https://data.pequalnp.com/data/desk/gaps.json)
+
 ## Upper and lower bounds
 
 The 11-gate circuit in `Witness.lean` uses AND and OR. `witness_correct` proves that it computes the exact function on every input. The separate Python replay also compares its output against the edge list for all 128 inputs.
