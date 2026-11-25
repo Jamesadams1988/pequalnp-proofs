@@ -1,0 +1,88 @@
+positive_row	mask	minimum_monotone_tree_gates	depth	witness
+L-meta-15101	0xa8888888a8808000	9	6	(x0 & (((x1 | x4) & (x2 & x3)) | (x1 & (x5 | (x4 & (x2 | x3))))))
+L-meta-15113	0xaaa8a888a8888888	9	5	(x0 & (x1 | (((x2 & x3) & (x4 | x5)) | ((x2 | x3) & (x4 & x5)))))
+L-meta-15127	0xaaaaaaa8aaa8a888	9	5	(x0 & (x1 | (((x2 | x3) | (x4 & x5)) & ((x2 & x3) | (x4 | x5)))))
+L-meta-15129	0xe880a880c8808880	9	4	((x0 | (x2 & x4)) & ((x1 | (x3 & x5)) & ((x0 & x2) | (x1 & x3))))
+L-meta-15139	0xe888a888e880a880	9	4	((x0 | (x1 & x4)) & ((x2 | (x3 | x5)) & ((x0 & x1) | (x2 & x3))))
+L-meta-15147	0xe888e080e880e080	9	4	((x2 | (x4 & (x3 | x5))) & ((x0 & x1) | ((x0 | x1) & (x2 & x3))))
+L-meta-15151	0xe888e880e888e080	9	4	((x0 | x1) & (((x2 | x4) | (x3 & x5)) & ((x0 & x1) | (x2 & x3))))
+L-meta-15209	0xe8a8e888e8a0e880	9	4	(((x0 & x1) | (x2 & (x3 | x4))) & ((x1 & x3) | (x0 & (x2 | x5))))
+L-meta-15287	0xeaaaaaaae880a880	9	5	((x0 & (x5 | (x1 & (x2 | x3)))) | ((x2 & x3) & (x0 | (x1 & x4))))
+L-meta-15345	0xeaaae880eaaac880	9	5	((x0 & (x4 | (x1 & (x2 | x3)))) | ((x2 & x3) & (x1 | (x0 & x5))))
+L-meta-15353	0xeaaae888eaaae880	9	6	(((x0 | x1) & (x2 & x3)) | (x0 & (x4 | (x1 & (x2 | (x3 | x5))))))
+L-meta-15379	0xeac0e8c0ea80e880	9	4	((x0 | (x3 | x5)) & ((x1 | (x2 | x4)) & ((x0 & x3) | (x1 & x2))))
+L-meta-15529	0xeae8eac0eae8aa80	9	5	((x0 & (x3 | (x4 & (x1 | x2)))) | ((x1 & x2) & (x0 | (x4 | x5))))
+L-meta-16119	0xeaeaea80eae8ea80	>9		
+L-meta-16125	0xeaeaea88ea88ea00	9	4	((x0 | (x1 & x2)) & ((x3 | (x4 & x5)) | ((x0 & x1) & (x4 | x5))))
+L-meta-16131	0xeaeaea88eaaaaa00	>9		
+L-meta-16167	0xeaeaeaaaeac0e880	>9		
+L-meta-16175	0xeaeaeaaaeae8ea80	>9		
+L-meta-16187	0xeaeaeac8eac8c8c0	>9		
+L-meta-16195	0xeaeaeae8eae8eac0	9	5	((x1 & x2) | (x0 & ((x3 | (x4 & x5)) | ((x1 | x2) & (x4 | x5)))))
+L-meta-16215	0xeee0e8e0e8e0e0e0	9	5	((x0 | x1) & (x2 | ((x3 & (x4 | x5)) & ((x0 & x1) | (x4 & x5)))))
+L-meta-16223	0xeee0e8e0eae0a0a0	>9		
+L-meta-16255	0xeee8e8e0eae8e8e0	>9		
+L-meta-16257	0xeee8e8e0eee0e8e0	9	4	(((x0 & x1) & (x3 | (x4 & x5))) | ((x0 | x1) & (x2 | (x3 & x4))))
+L-meta-16267	0xeee8e8e8eee8e8e0	9	4	(((x0 & x1) & (x3 | (x4 | x5))) | ((x0 | x1) & (x2 | (x3 & x4))))
+L-meta-16269	0xeee8eaa0eae8eaa0	>9		
+L-meta-16271	0xeee8eaa0eee0eaa0	>9		
+L-meta-16273	0xeee8eaa0eee8aaa0	>9		
+L-meta-16287	0xeee8eaa8eee8eaa0	>9		
+L-meta-16321	0xeee8eae0eee8e8e0	>9		
+L-meta-16323	0xeee8eae0eee8eaa0	>9		
+L-meta-16361	0xeeeaeaa0eaaaeaa0	9	5	(((x0 & x4) | (x2 | x3)) & (x0 | (x1 & ((x2 & x3) | (x4 & x5)))))
+L-meta-16363	0xeeeaeaa0eae0eaa0	9	5	((x0 | (x1 & (x3 | (x2 & x4)))) & (x2 | ((x0 & x3) | (x4 & x5))))
+L-meta-16365	0xeeeaeaa0eaeaea00	>9		
+L-meta-15769	0xeeeaeaa0eaeaeaa0	9	6	(((x0 & x2) | (x3 | x4)) & (x0 | (x1 & (x2 | (x3 & (x4 & x5))))))
+L-meta-16367	0xeeeaeaa0eee8eaa0	>9		
+L-meta-16377	0xeeeaeaa8eeeaeaa0	>9		
+L-meta-15773	0xeeeaeaaaeaaaaaaa	9	5	(x0 | (x1 & (((x2 & x3) & (x4 | x5)) | ((x2 | x3) & (x4 & x5)))))
+L-meta-16405	0xeeeaeaaaece8e8a0	9	4	((x0 & (x2 | x5)) | ((x1 & (x3 | x4)) & ((x0 | x2) | (x3 & x4))))
+L-meta-16411	0xeeeaeaaaeee8eaa0	>9		
+L-meta-16419	0xeeeaeac0eeeaea80	>9		
+L-meta-16443	0xeeeaeae0eae0e0e0	>9		
+L-meta-15845	0xeeeaeae0eeeaeaa0	9	5	((x0 | (x1 & (x2 | (x3 & x4)))) & ((x3 | x4) | (x2 & (x0 | x5))))
+L-meta-16529	0xeeeaeaeaeec8e8c0	>9		
+L-meta-16537	0xeeeaeaeaeee8e8e0	9	5	((x0 & (x5 | (x1 & (x3 | x4)))) | ((x0 | x1) & (x2 | (x3 & x4))))
+L-meta-16545	0xeeeaeaeaeeeaeaa0	9	5	((x0 | (x1 & (x2 | (x3 & x4)))) & (x3 | ((x0 & x2) | (x4 | x5))))
+L-meta-16573	0xeeeaeee0eeeaeaa0	9	5	(((x0 & x4) | (x2 | x3)) & (x0 | (x1 & ((x2 & x3) | (x4 | x5)))))
+L-meta-16581	0xeeeaeee8eeeaecc0	>9		
+L-meta-15949	0xeeeeeeeaeeeaeaaa	9	5	(x0 | (x1 & (((x2 | x3) | (x4 & x5)) & ((x2 & x3) | (x4 | x5)))))
+L-meta-16591	0xeeeeeeeaeeeaeac0	>9		
+L-meta-16595	0xeeeeeeeaeeeaeae0	>9		
+L-meta-12096	0xfe80fe00fe00e800	>9		
+L-meta-16597	0xfee8eae8eee8eae8	>9		
+L-meta-16599	0xfee8eae8fce8e8e8	9	4	((x0 | ((x1 & x2) | (x3 & x4))) & ((x1 | x2) | (x0 & (x3 & x5))))
+L-meta-16601	0xfee8eae8fec8eac8	>9		
+L-meta-16603	0xfee8eee0eee8eee0	9	4	(((x0 | x1) & (x2 | x3)) | ((x1 | (x3 & x5)) & (x4 & (x0 | x2))))
+L-meta-16605	0xfee8eee0fae8eae0	>9		
+L-meta-16607	0xfee8eee8fee8eae8	>9		
+L-meta-16609	0xfee8eee8fee8eee0	>9		
+L-meta-16611	0xfeeaeaaaeaeaeaaa	9	4	((x0 | ((x1 & x2) & (x3 | x4))) | (x3 & ((x1 | x2) & (x4 & x5))))
+L-meta-16635	0xfeeaeaeafee8eae8	9	4	((x0 | ((x1 & x2) | (x3 & x4))) & ((x1 | x2) | (x0 & (x3 | x5))))
+L-meta-16663	0xfeeaece8fee8ece8	>9		
+L-meta-16679	0xfeeaeee0fee8eee0	9	5	(((x0 | x1) & (x2 | x3)) | (x4 & ((x2 & x3) | (x0 & (x1 | x5)))))
+L-meta-16693	0xfeeaeee8fee8eee8	>9		
+L-meta-16741	0xfeeaeeeafee8ccc8	9	6	((x0 & (x1 | x5)) | ((x2 | x3) & (x1 | (x4 & (x0 | (x2 & x3))))))
+L-meta-16743	0xfeeaeeeafee8ece8	9	4	((x0 & (x2 | x5)) | ((x1 | (x3 & x4)) & ((x0 | x2) | (x1 & x3))))
+L-meta-16745	0xfeeaeeeafee8eee0	>9		
+L-meta-16751	0xfeeaeeeafeeaeaaa	9	4	((x0 | ((x1 | x4) & (x2 & x3))) | (x1 & ((x2 | x3) & (x4 | x5))))
+L-meta-16765	0xfeeafcc8fee8fcc8	9	4	((x1 | ((x0 & x4) | (x2 & x3))) & ((x2 | x3) | (x0 & (x1 | x5))))
+L-meta-16783	0xfeeafee8feeaccc8	>9		
+L-meta-16785	0xfeeafee8feeaeee8	>9		
+L-meta-16787	0xfeeafee8feeafcc8	9	4	(((x2 & x3) | (x0 & (x1 | x4))) | ((x2 | x3) & (x1 | (x0 & x5))))
+L-meta-16861	0xfeeeeeeefee8eee8	9	4	(((x0 | x1) | (x2 & (x3 & x4))) & (x2 | ((x0 & x1) | (x3 | x5))))
+L-meta-16879	0xfeeefaaafeeaeaaa	9	5	(x0 | (((x1 & x4) | (x2 & x3)) & (x5 | ((x1 & x2) | (x3 & x4)))))
+L-meta-16943	0xfeeefaeafee8fae8	9	4	(((x0 | x2) & (x1 | x3)) | ((x0 | (x1 & x4)) & (x2 | (x3 | x5))))
+L-meta-16971	0xfeeefee0fee8fee0	9	5	(((x0 | x1) | (x2 & x3)) & ((x2 | x3) | (x4 & (x5 | (x0 & x1)))))
+L-meta-16987	0xfeeefee8feeafee8	>9		
+L-meta-16989	0xfeeefee8feeef0e0	9	5	(((x0 | x1) | (x2 & x3)) & ((x2 | x4) | (x5 & (x3 | (x0 & x1)))))
+L-meta-16991	0xfeeefee8feeefae8	9	4	(((x0 | x2) & (x1 | x3)) | ((x0 | x1) & ((x2 | x4) | (x3 & x5))))
+L-meta-16993	0xfeeefee8feeefee0	9	4	((x0 & (x1 & x5)) | ((x2 | (x3 | x4)) & ((x0 | x1) | (x2 & x3))))
+L-meta-17007	0xfeeefeeafeeafaaa	9	4	((x0 | (x2 & x3)) | ((x1 & (x4 | x5)) & ((x2 | x3) | (x4 & x5))))
+L-meta-17031	0xfeeefeeafeeeeaaa	>9		
+L-meta-17045	0xfeeefeeafeeefee8	9	4	((x0 & (x1 | x5)) | ((x2 | (x3 | x4)) & ((x0 | x1) | (x2 & x3))))
+L-meta-17069	0xfefefeaafefcfc80	9	5	(((x1 | x2) & (x3 | x4)) | (x0 & (x5 | ((x1 & x2) | (x3 & x4)))))
+L-meta-17073	0xfefefeeafeeafeaa	9	4	((x0 | ((x1 & x2) & (x4 | x5))) | ((x1 | x2) & (x3 | (x4 & x5))))
+L-meta-17075	0xfefefeeafeeeeeaa	>9		
+L-meta-17087	0xfefefeeafefcfee8	9	4	((x0 | ((x1 & x2) | (x3 | x4))) & ((x1 | x2) | (x0 & (x3 | x5))))

@@ -1,0 +1,43 @@
+{
+  "lean_version": "Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)",
+  "started_utc": "2026-11-25T20:50:18Z",
+  "finished_utc": "2026-11-25T20:50:42Z",
+  "exit": 0,
+  "checked": 87,
+  "claim": "For every row in rows.tsv, every size budget admitting an unrestricted six-input fan-in-two AND/OR/NOT circuit computing the literal function is at least nine.",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "command": "lean -j1 -o ThresholdBatch.olean ThresholdBatch.lean",
+  "generator": "python generate.py > ThresholdBatch.lean",
+  "reproducible_generated_bytes": true,
+  "public_baseline": {
+    "generated_at": "2026-11-25T20:41:21.485Z",
+    "url": "https://data.pequalnp.com/data/desk/gaps.json",
+    "sha256": "76238e0dee3c297410e6cf9b49670aa83f92955dccbbaa3f9b533feffd3b70f2",
+    "positive_fixed_tables": 842,
+    "two_of_four": 57,
+    "three_of_four": 30,
+    "all_manifest_matches_independent_census": true
+  },
+  "sha256": {
+    "rows.tsv": "60f3c9b30c98bfb19a43b8eb7fb3bd1b0a7608a11d2e4ae1d74cf60d33ba2919",
+    "generate.py": "a174f2dae5bb6567525234ed1bfb30d41e2f6a6117bee853a09e38256e24e988",
+    "threshold_minor.py": "e48d9dc4ec003563862508bd05bbdbb73cb9887cfac2f2d139cf97c2540eb0b0",
+    "ThresholdBatch.lean": "08a9a8466796f3212c3ca62551f10d1cee3e716e7ac21dda6d679d88edb42233",
+    "kernel.log": "0f5daf0320340bc4d9393acfcc92548c226ec7ab5f3f0a1381cb39863071abbe",
+    "ThresholdBatch.olean": "be6350a2d637a09696eb429e4052abedd26ce77c8c29d04baa6880963a7cb19b"
+  },
+  "dependencies": {
+    "upstream_commit": "24da7e46a0e459042fabd6d250b9503af98bbd57",
+    "CofactorBound": {
+      "sha256": "9e145b6f7dae0cb498f627d59411f7fb52517f73820173f92e0a7551a73a77d9",
+      "research_commit": "75cbe793310bb3cfd8f94cf9db0fd42a8eabee6f"
+    },
+    "L_meta_12184": "756770e7c1830cd1f698127a324af7c5763ac06887b7be15a8db151be6f2b494",
+    "L_meta_4795": "5e85e410b1778e17b12481072680e6bdc76b5a8de2aa1d9ac6d69d1ee1c43c33",
+    "L_meta_8657": "03fac36312d27e81e651bf4222042a4d6cc80411ea9762b2d7c54394a31410ae"
+  }
+}
