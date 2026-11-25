@@ -1,0 +1,20 @@
+{
+  "lines": 149,
+  "axioms": 40,
+  "resolutions": 109,
+  "distinct_clauses": 149,
+  "live_ancestors_including_final": 149,
+  "unfolded_leaf_occurrences": 140,
+  "maximum_resolution_depth": 10,
+  "maximum_width": 6,
+  "clauses_by_width": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 14,
+    "4": 64,
+    "5": 52,
+    "6": 12
+  },
+  "lines_used_multiple_times": 42
+}
