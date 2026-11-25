@@ -1,0 +1,7 @@
+derived labels | surviving prefixes | min operand bound | min local instruction bound
+1 1 infeasible infeasible
+2 20 infeasible infeasible
+3 250 infeasible infeasible
+4 2370 18 21
+5 18485 20 22
+6 122699 22 24

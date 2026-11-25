@@ -1,0 +1,4 @@
+Pure nonempty-mask states 589029, pair additions 44893058, full-mask lines 1669
+Uniform-coefficient-one RHS values 2 3
+Mixed nonempty-mask states 1217606, pair additions 137828035, full-mask lines 3498
+Uniform-coefficient-zero RHS values 0 1
