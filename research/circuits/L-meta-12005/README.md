@@ -4,6 +4,14 @@ Independent circuit and tests by James Adams (Jamesadams1988).
 
 The function is true when the selected vertices contain an edge of a fixed seven-vertex graph. The question in L-meta-12005 is whether an AND/OR/NOT circuit with at most one NOT can use fewer gates than every AND/OR circuit for that function. Gates take at most two inputs. For this graph the answer is **no**. [Public desk entry](https://pequalnp.com/desk/step?gap=L-meta-12005)
 
+## Exact minimum with unrestricted NOT gates
+
+James Adams's 11-gate AND/OR circuit attains the minimum even when any number of NOT gates is allowed. The proof uses the same seven-input function as the original desk statement. [Lean proof](ExactMinimum.lean) · [Circuit](Witness.lean)
+
+Fix leaf 3 to whichever value saves two gates. In both branches its neighbor 0 is essential. Fixing 0 to false saves another gate and gives the same graph on vertices 1, 2, 4, 5 and 6. Fixing 1 to false saves a fourth gate and leaves a four-clique on 2, 4, 5 and 6. Every unrestricted circuit for that clique needs at least seven gates, giving the matching lower bound of eleven. The lemma `LeafTransfer.threeGateRestriction` packages the first two steps for other functions with the same restriction pattern. [Gate-elimination lemmas from nicohabets, crediting sanchan](https://github.com/open-goat/pequalnp-proofs/pull/9322) · [Four-clique bound by hilelyos](https://github.com/open-goat/pequalnp-proofs/pull/13494)
+
+To replay from this directory, use the project's pinned Lean 4.36.0 with Mathlib and `PEqualNP.Defs` built, then run `bash check_leaf_transfer.sh ../../../lean`. The script checks the source hashes, rebuilds both imported proofs in a temporary directory, and prints the axiom dependencies of the reusable lemma and the exact minimum. [Replay script](check_leaf_transfer.sh)
+
 ## Upper and lower bounds
 
 The 11-gate circuit in `Witness.lean` uses AND and OR. `witness_correct` proves that it computes the exact function on every input. The separate Python replay also compares its output against the edge list for all 128 inputs.
