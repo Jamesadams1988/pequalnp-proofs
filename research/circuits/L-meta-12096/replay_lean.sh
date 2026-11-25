@@ -10,6 +10,13 @@ replay() {
     exec lean --root="$2" -o "$1/$3.olean" "$2/$3.lean"
   ' sh "$replay_dir" "$research_dir" "$1"
 }
+if [[ "${1:-}" == read-once ]]; then
+  replay SignedFrontier
+  for module in SemanticCuts SignedChildren Rectangle SmallSide Concrete ZeroReject Borderline AutoRectangle AutoExamples PinSavings Polarity PolarityCase; do
+    replay "$module"
+  done
+  exit 0
+fi
 replay ThresholdCircuit
 replay SignedFrontier
 replay Symmetry
