@@ -1,0 +1,9 @@
+edges 104 matching 21 C4-free True
+minimum centers 21 achievers 2
+proper mixed minimum 24 achievers 2
+mixed min by omitted left count [(1, 24), (2, 27), (3, 29), (4, 30), (5, 30), (6, 30), (7, 30), (8, 30), (9, 30), (10, 29), (11, 29), (12, 28), (13, 27), (14, 27), (15, 26), (16, 25), (17, 24)]
+mixed minimizing pairs (omitted left, forced right masks) [(1, 1179808), (2015213, 2097150)]
+total gate lower bound 124
+proper mixed gate lower bound 127
+full point shore plus one line center 125
+signed-clause pairs checked on the four-vertex control 65536 safe 545
