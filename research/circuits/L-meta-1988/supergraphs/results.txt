@@ -1,0 +1,2 @@
+row pairs 78 first factors 182 strict ordered pairs 93002
+example gates 70 factor edge counts 58 53 merged rows 0 1 second extra 2 0

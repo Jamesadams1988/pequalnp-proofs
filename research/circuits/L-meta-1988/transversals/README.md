@@ -1,0 +1,25 @@
+# Which factors must depend on every input?
+
+Let F be the incidence edge function of the order-three plane. In any conjunction of at most four Boolean factors computing F, **at least one factor depends on all 26 input variables**. Five factors suffice if each may omit one input. In every such five-factor representation each factor omits exactly one variable, and the five omitted variables form the closed neighborhood of one vertex. The factors in this statement may be nonmonotone. It applies in particular to the two wire values fed to the free final AND in L-meta-1988.
+
+## Factorization and maximal false supports
+
+Identify an input with its set of true variables. For any monotone Boolean function F on a finite ground set, the least number of factors, each insensitive to at least one coordinate, whose conjunction equals F is the least number of vertices meeting every inclusion-maximal false support. The correspondence works separately for each upper bound k on the two cardinalities; in degenerate cases either family of choices can be empty.
+
+For the forward implication, choose one ignored coordinate per factor. At each maximal false support M some factor is false. Adding a vertex outside M makes F true, so that factor must change. Its ignored coordinate therefore belongs to M. For the reverse implication, take a hitting set H of the maximal false supports. Use one factor X ↦ F(X ∪ {v}) for each v in H. These factors accept every true input by monotonicity. Extend any false input to a maximal false M and choose v in H ∩ M. The corresponding factor rejects the original input. [Lean formulation and proof](FactorTransversal.lean)
+
+## Why the answer is five
+
+The general graph argument works for any finite, simple, bipartite graph without four-cycles and of minimum degree d ≥ 2. Its edge function’s maximal false inputs are its maximal independent sets. Each closed neighborhood N[v] meets every maximal independent set, since an omitted vertex must have a neighbor in that set. A minimum-degree vertex thus gives a hitting set of size d+1.
+
+Write a proposed hitting set of at most d+1 vertices as P ∪ L for its two shores. A single-shore candidate misses the entire opposite shore, which is maximal independent because the graph has no isolated vertices. For a mixed candidate interchange the shores as needed so that |L| < d. If every forbidden line b in L has a neighbor p_b outside P, choose one such point for each b. For each a in P choose a neighboring line avoiding all the p_b. This is possible because a and p_b are distinct and have at most one common neighbor. Fewer than d neighbors of a are excluded. Every chosen line lies outside L, since b already neighbors its p_b. The chosen points and lines form an independent set disjoint from P ∪ L and dominate every vertex in P ∪ L. Any extension to a maximal independent set continues to avoid those vertices. This defeats the proposed hitting set.
+
+The only remaining case is a forbidden line b with N(b) ⊆ P. Since its degree is at least d, the size budget forces P ∪ L = N[b] and the degree of b to be d. This proves the classification. When d ≥ 3, distinct closed neighborhoods share at most two vertices. In a sharp factorization, choosing different ignored variables for one factor would either make a smaller hitting set or give a second minimum hitting set that shares d vertices with the first. Both are impossible. In the plane d = 4, so each of the five extremal factors misses exactly one vertex of one closed neighborhood.
+
+## Quantifying the two-wire obstruction
+
+For each nonempty set U of coordinates ignored by one wire, put m(U) equal to the number of maximal independent sets containing U. At every other maximal independent set M, at least one v in U lies outside M. Adding v makes F true. The wire ignoring U must therefore be true on M, leaving the other wire responsible for rejecting M. This forces at least **507 of the 704 maximal negative tests** onto one wire if its sibling omits one input. Two omitted inputs force at least 634 rejections, and four force at least 694. An omitted set containing an edge forces the first factor to be constant true.
+
+The bound 704 − m(U) is sharp as a semantic responsibility count. Use F(X ∪ U) as the first factor. For the second, take the conjunction of the clauses indexed by maximal independent sets M that do not contain U, where the clause for M accepts X exactly when X contains a vertex outside M. The two factors compute F and the second rejects exactly those maximal negatives. This construction imposes no gate budget.
+
+The replay enumerates the 704 distinct maximal independent sets and all candidate hitting sets up to size five. Exactly 26 of the 65,780 five-element sets hit all rows; these are the 26 closed neighborhoods. It also counts m(U) over every nonempty independent omitted set, checking the number of sets at each size independently by selecting points and then lines. Run `python3 check.py` and compare with the recorded output. [Enumeration](check.py) · [Full counts](expected.txt)

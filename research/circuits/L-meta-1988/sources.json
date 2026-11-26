@@ -1,0 +1,22 @@
+{
+  "upstream_pin": "cca62ead6f33b7b15e65024b50f58515ceb1ba75",
+  "export": "https://data.pequalnp.com/data/desk/gaps.json",
+  "export_utc": "2026-11-26T01:39:25.099Z",
+  "checked_dependencies": {
+    "1500": {
+      "id": "L-meta-1500",
+      "file": "lean/PEqualNP/Outside/L_meta_1500.lean",
+      "file_sha256": "2f08e62488d04d948f02070a8873bd405d45f2bd617315ba8c66b546838fc1ce"
+    },
+    "4580": {
+      "id": "L-meta-4580",
+      "file": "lean/PEqualNP/Outside/L_meta_4580.lean",
+      "file_sha256": "650ca32b040103ad95d91c527cb74be2a5a1594e3dfb0c2395be0a8ceaca5bad"
+    },
+    "6528": {
+      "id": "L-meta-6528",
+      "file": "lean/PEqualNP/Outside/L_meta_6528.lean",
+      "file_sha256": "fa2f4610287695beccb88ae6f0b4acb4a1c824caeb9f021523e64b3c99ed3754"
+    }
+  }
+}

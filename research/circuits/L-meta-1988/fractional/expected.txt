@@ -1,0 +1,8 @@
+selected profile class sizes 1 234 234 26
+cut size | number of cuts | memberships per cut in columns 1-4 | coverage
+13 | 2 | 1 0 0 0 | 1/1
+10 | 26 | 0 0 0 4 | 2/1
+8 | 156 | 0 6 0 1 | 1/1
+7 | 468 | 0 3 5 0 | 1/1
+6 | 52 | 0 0 0 2 | 1/1
+fractional optimum 343/5 from 704 cuts and 4363558 cut-support incidences

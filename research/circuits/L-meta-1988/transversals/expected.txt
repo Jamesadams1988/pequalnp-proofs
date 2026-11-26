@@ -1,0 +1,21 @@
+Maximal negatives 704
+marked vertices | sets tested | least number of disjoint maximal negatives | hitting sets
+1 | 26 | 507 | 0
+2 | 325 | 310 | 0
+3 | 2600 | 165 | 0
+4 | 14950 | 64 | 0
+5 | 65780 | 0 | 26
+omissions | independent choices | max m(U) | required rejections by sibling
+1 | 26 | 197 | 507
+2 | 273 | 70 | 634
+3 | 1508 | 23 | 681
+4 | 4784 | 10 | 694
+5 | 8970 | 4 | 700
+6 | 10036 | 4 | 700
+7 | 7020 | 2 | 702
+8 | 3666 | 2 | 702
+9 | 1664 | 2 | 702
+10 | 598 | 1 | 703
+11 | 156 | 1 | 703
+12 | 26 | 1 | 703
+13 | 2 | 1 | 703

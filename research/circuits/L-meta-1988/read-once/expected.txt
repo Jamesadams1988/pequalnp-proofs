@@ -1,0 +1,8 @@
+maximal negatives by size 6=52 7=468 8=156 10=26 13=2
+total maximal negatives 704
+total weight 686
+cut-factor incidences 4363558
+maximum false cuts per factor 14 (singleton masks 7668 1)
+maximum false weight per factor 10 (singleton masks 0 0)
+unweighted lower bound 51
+weighted lower bound 69
