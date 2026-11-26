@@ -1,0 +1,1 @@
+'FirstFive.Cofactor3.unrestricted_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

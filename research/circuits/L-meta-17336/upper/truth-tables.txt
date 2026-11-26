@@ -1,0 +1,10 @@
+not5: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+and5_6: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+and5_7: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+and5_8: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_6: 16 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_6Padded: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_7: 16 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_7Padded: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_8: 16 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.
+or5_8Padded: 17 gates, wire 9 and output agree on 512/512 inputs; deleting edge (0, 4) breaks 10.

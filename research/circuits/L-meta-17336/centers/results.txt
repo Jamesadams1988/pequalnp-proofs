@@ -1,0 +1,9 @@
+edge count 12 minimum centers 5 minimum covers [(0, 1, 6, 7, 8), (0, 5, 6, 7, 8), (4, 5, 6, 7, 8)]
+edge partitions into five nonempty stars 20
+not5 optimal orientations using the first gate 0 gates 17
+and5_6 optimal orientations using the first gate 0 gates 17
+and5_7 optimal orientations using the first gate 0 gates 17
+and5_8 optimal orientations using the first gate 0 gates 17
+or5_6 optimal orientations using the first gate 6 gates 16
+or5_7 optimal orientations using the first gate 4 gates 16
+or5_8 optimal orientations using the first gate 4 gates 16

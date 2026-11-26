@@ -1,0 +1,9 @@
+active bit positions 1756 distinct assignments 267 distinct true/false [(False, 57), (True, 210)]
+shared chart sizes [4, 20, 27, 9]
+0 NOT 5 additional local inequalities 7 root batches 1
+1 AND 5,6 additional local inequalities 1 root batches 1
+2 OR 5,6 additional local inequalities 4 root batches 5
+3 AND 5,7 additional local inequalities 2 root batches 1
+4 OR 5,7 additional local inequalities 4 root batches 5
+5 AND 5,8 additional local inequalities 4 root batches 2
+6 OR 5,8 additional local inequalities 3 root batches 6

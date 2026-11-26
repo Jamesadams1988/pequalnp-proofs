@@ -1,0 +1,77 @@
+excluded or 8 through 15 leaves
+excluded or 8 with additional NOT 9 through 14 leaves
+excluded or 8 with additional NOT 0 through 14 leaves
+excluded or 8 with additional NOT 1 through 14 leaves
+excluded or 8 with additional NOT 2 through 14 leaves
+excluded or 8 with additional NOT 3 through 14 leaves
+excluded or 8 with additional NOT 4 through 14 leaves
+excluded or 8 with additional NOT 5 through 14 leaves
+excluded or 8 with additional NOT 6 through 14 leaves
+excluded or 8 with additional NOT 7 through 14 leaves
+excluded or 8 with additional NOT 8 through 14 leaves
+excluded and 8 through 15 leaves
+excluded and 8 with additional NOT 9 through 14 leaves
+excluded and 8 with additional NOT 0 through 14 leaves
+excluded and 8 with additional NOT 1 through 14 leaves
+excluded and 8 with additional NOT 2 through 14 leaves
+excluded and 8 with additional NOT 3 through 14 leaves
+excluded and 8 with additional NOT 4 through 14 leaves
+excluded and 8 with additional NOT 5 through 14 leaves
+excluded and 8 with additional NOT 6 through 14 leaves
+excluded and 8 with additional NOT 7 through 14 leaves
+excluded and 8 with additional NOT 8 through 14 leaves
+excluded not 5 through 15 leaves
+excluded not 5 with additional NOT 9 through 14 leaves
+excluded not 5 with additional NOT 0 through 14 leaves
+excluded not 5 with additional NOT 1 through 14 leaves
+excluded not 5 with additional NOT 2 through 14 leaves
+excluded not 5 with additional NOT 3 through 14 leaves
+excluded not 5 with additional NOT 4 through 14 leaves
+excluded not 5 with additional NOT 5 through 14 leaves
+excluded not 5 with additional NOT 6 through 14 leaves
+excluded not 5 with additional NOT 7 through 14 leaves
+excluded not 5 with additional NOT 8 through 14 leaves
+excluded and 6 through 15 leaves
+excluded and 6 with additional NOT 9 through 14 leaves
+excluded and 6 with additional NOT 0 through 14 leaves
+excluded and 6 with additional NOT 1 through 14 leaves
+excluded and 6 with additional NOT 2 through 14 leaves
+excluded and 6 with additional NOT 3 through 14 leaves
+excluded and 6 with additional NOT 4 through 14 leaves
+excluded and 6 with additional NOT 5 through 14 leaves
+excluded and 6 with additional NOT 6 through 14 leaves
+excluded and 6 with additional NOT 7 through 14 leaves
+excluded and 6 with additional NOT 8 through 14 leaves
+excluded and 7 through 15 leaves
+excluded and 7 with additional NOT 9 through 14 leaves
+excluded and 7 with additional NOT 0 through 14 leaves
+excluded and 7 with additional NOT 1 through 14 leaves
+excluded and 7 with additional NOT 2 through 14 leaves
+excluded and 7 with additional NOT 3 through 14 leaves
+excluded and 7 with additional NOT 4 through 14 leaves
+excluded and 7 with additional NOT 5 through 14 leaves
+excluded and 7 with additional NOT 6 through 14 leaves
+excluded and 7 with additional NOT 7 through 14 leaves
+excluded and 7 with additional NOT 8 through 14 leaves
+excluded or 6 through 15 leaves
+excluded or 6 with additional NOT 9 through 14 leaves
+excluded or 6 with additional NOT 0 through 14 leaves
+excluded or 6 with additional NOT 1 through 14 leaves
+excluded or 6 with additional NOT 2 through 14 leaves
+excluded or 6 with additional NOT 3 through 14 leaves
+excluded or 6 with additional NOT 4 through 14 leaves
+excluded or 6 with additional NOT 5 through 14 leaves
+excluded or 6 with additional NOT 6 through 14 leaves
+excluded or 6 with additional NOT 7 through 14 leaves
+excluded or 6 with additional NOT 8 through 14 leaves
+excluded or 7 through 15 leaves
+excluded or 7 with additional NOT 9 through 14 leaves
+excluded or 7 with additional NOT 0 through 14 leaves
+excluded or 7 with additional NOT 1 through 14 leaves
+excluded or 7 with additional NOT 2 through 14 leaves
+excluded or 7 with additional NOT 3 through 14 leaves
+excluded or 7 with additional NOT 4 through 14 leaves
+excluded or 7 with additional NOT 5 through 14 leaves
+excluded or 7 with additional NOT 6 through 14 leaves
+excluded or 7 with additional NOT 7 through 14 leaves
+excluded or 7 with additional NOT 8 through 14 leaves

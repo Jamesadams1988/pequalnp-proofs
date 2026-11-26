@@ -1,0 +1,9 @@
+{
+  "id": "L-meta-17336",
+  "statement": "\u00ac (\u2200 C : PEqualNP.CircuitLowerBounds.Circuit, PEqualNP.MetaComplexity.FanInTwo C \u2192 ((\u2200 y : Fin 9 \u2192 Bool, (C.wires (List.ofFn y)).getD 9 false = !(y 5)) \u2228 (\u2203 j : Fin 9, (5 : Fin 9) < j \u2227 \u2200 y : Fin 9 \u2192 Bool, (C.wires (List.ofFn y)).getD 9 false = (y 5 && y j)) \u2228 (\u2203 j : Fin 9, (5 : Fin 9) < j \u2227 \u2200 y : Fin 9 \u2192 Bool, (C.wires (List.ofFn y)).getD 9 false = (y 5 || y j))) \u2192 PEqualNP.MetaComplexity.circuitFun 9 C = (fun x : Fin 9 \u2192 Bool => (x 0 && x 4) || (x 0 && x 5) || (x 1 && x 5) || (x 0 && x 6) || (x 2 && x 6) || (x 3 && x 6) || (x 1 && x 7) || (x 2 && x 7) || (x 4 && x 7) || (x 1 && x 8) || (x 3 && x 8) || (x 5 && x 8)) \u2192 16 \u2264 C.size)",
+  "file": "lean/PEqualNP/Outside/L_meta_17336.lean",
+  "module": "PEqualNP.Outside.L_meta_17336",
+  "imports": [
+    "PEqualNP.Defs"
+  ]
+}

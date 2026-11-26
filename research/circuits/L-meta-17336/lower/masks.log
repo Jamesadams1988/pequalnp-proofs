@@ -1,0 +1,1 @@
+'FirstFive.Cofactor.initial_exposed' depends on axioms: [propext, Quot.sound]
