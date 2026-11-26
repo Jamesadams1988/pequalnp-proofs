@@ -1,9 +1,11 @@
 {
-  "observed_utc": "2026-11-26T02:46:15.702299+00:00",
+  "observed_utc": "2026-11-26T03:10:25.945558+00:00",
   "upstream_pin": "6284ae5ebdec19cb4bce06d15e190de3560bc099",
   "dependency_count": 11,
   "finite_replay_exit": 0,
   "original_case_bodies_rebuilt": [
+    17269,
+    17271,
     17273,
     17275,
     17277,
@@ -11,11 +13,25 @@
     17281,
     17283
   ],
-  "local_verifier": "pending",
-  "positive_verdict_url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7180537038",
-  "description": "The unmodified project mathematical checker accepted the 16-gate witness and rechecked 1,736 constants. The same witness was rejected for the 15-gate statement. The finite replay, generic depth-to-size theorem and combination against all nine exact premise types passed. Six of the nine original case bodies have freshly compiled. The full joined refutation is still awaiting its local isolated-checker replay.",
+  "local_verifier": "timeout",
+  "positive_verdict_url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7181128698",
+  "description": "Lean checked the exact size of 16 and the exact depth of five. Eight of the nine lower-bound case files compiled as published. The zero-pivot case compiled from its original declaration bodies in 87 source-verified modules. The size witness also passed the project’s local checker, which rejected the same witness for a 15-gate bound. The full local replay reached its 14-minute wall-clock limit while the isolated mathematical checker was running. It returned no verdict on the refutation.",
   "upper_checker_exit": 0,
   "upper_checker_kernel_constants": 1736,
   "upper_15_control": "rejected for statement mismatch",
-  "handoff": "All nine cases have upstream checked hashes. At this verification point the private replay has six fresh original case modules. Two remaining unmodified sources are queued serially, and the original statements and proof bodies of the zero-pivot case are being checked across smaller modules. The interactor can resume the replay from those saved modules before recording a full local checker verdict."
+  "handoff": "The full Lean proofs of the exact size and depth are closed. The full local replay reached its 14-minute wall-clock limit while the isolated mathematical checker was running. It returned no verdict on the refutation. The interactor can reuse the compiled dependencies if the project requests another check. The desk has directed contributors to fresh assignments.",
+  "split_case": {
+    "row": "L-meta-17103",
+    "parts": 87,
+    "preserves_source_declaration_bodies": true,
+    "source_sha256": "a654cdd548538c5a0a6d9444a2e101052b446d240443570a939dcd9d2a68ab01"
+  },
+  "lean_closed": [
+    "CircuitTable11021.exactMinimum",
+    "CircuitTable11021.minimumDepth",
+    "PEqualNP.Outside.L_meta_11021"
+  ],
+  "local_verifier_exit": 124,
+  "local_verifier_start_utc": "2026-11-26T02:56:19Z",
+  "local_verifier_end_utc": "2026-11-26T03:10:19Z"
 }

@@ -1,0 +1,19 @@
+{
+  "donor_sha256": "a654cdd548538c5a0a6d9444a2e101052b446d240443570a939dcd9d2a68ab01",
+  "module_count": 87,
+  "wrapper_module": "PEqualNP.Outside.L_meta_17103",
+  "wrapper_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_layout": "PEqualNP.Outside.Split17103",
+  "preserved_proof_bodies": true,
+  "exit_code": 0,
+  "peak_private_kib": 3578400,
+  "peak_rss_kib": 6312104,
+  "peak_private_module": "PEqualNP.Outside.Split17103.P068",
+  "wrapper_olean_sha256": "3261cd861de7dca0655a4a2e9b455c2aaf43e98b73ff3f88f9e41c54388bccbb",
+  "generated_manifest_sha256": "6a5312d8dde1f9612eb7a21229c08e83997f6eecec6c397ca6d008acd86e40cf",
+  "wrapper_source_sha256": "6c4c38a987a8cde35cbb8edfba96e80601458764eb09c13d598c49b6b93a13b0"
+}

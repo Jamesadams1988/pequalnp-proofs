@@ -1,0 +1,18 @@
+Upper witness, check mode
+
+ACCEPTED (check): PEqualNP.Outside.ForkUpper11021; axioms [propext, Quot.sound, Classical.choice]; kernel re-checked 1736 constants of [PEqualNP.Defs.Base, PEqualNP.Defs.Classes, PEqualNP.Defs.CircuitLowerBounds, PEqualNP.Defs.MetaComplexity, PEqualNP.Defs.MetaComplexityLocal, PEqualNP.Defs.MetaComplexitySparse, PEqualNP.Defs.MetaComplexityMinimal, PEqualNP.Defs.MetaComplexityLgp, PEqualNP.Defs.MetaComplexityLgpMono, PEqualNP.Defs.BinaryCircuit, PEqualNP.Defs.MetaComplexityCoverCircuit, PEqualNP.Defs.ProofComplexity, PEqualNP.Defs.ProofComplexityLin, PEqualNP.Defs.ProofComplexityLinK, PEqualNP.Defs.ProofComplexityLift, PEqualNP.Defs.ProofComplexityResK, PEqualNP.Defs.ProofComplexityRestrict, PEqualNP.Defs.ProofComplexityBit, PEqualNP.Defs.ProofComplexityPC, PEqualNP.Defs.ProofComplexityMoment, PEqualNP.Defs.ProofComplexityChain, PEqualNP.Defs.ProofComplexityGeneral, PEqualNP.Defs.Search, PEqualNP.Defs.SearchQ, PEqualNP.Defs.SearchQTree, PEqualNP.Defs.SearchCP, PEqualNP.Defs.SearchRUP, PEqualNP.Defs.SearchQSyn, PEqualNP.Defs.SearchSoS, PEqualNP.Defs.Gct, PEqualNP.Defs.Oracle, PEqualNP.Defs.Algebraic, PEqualNP.Defs.Expanders, PEqualNP.Defs.RiffleRank, PEqualNP.Defs.TimeAlt, PEqualNP.Defs.CoverPromise, PEqualNP.Defs.SingleLevel, PEqualNP.Defs.DeMorganFormula, PEqualNP.Defs.MetaComplexityTypedRank, PEqualNP.Defs.Pebble, PEqualNP.Defs.Subdivision, PEqualNP.Defs.AndCountCircuit, PEqualNP.Defs.PebbleThreeWay, PEqualNP.Defs.CoLevel, PEqualNP.Defs.Peelable, PEqualNP.Defs.NestedCoverCircuit, PEqualNP.Defs.LiteralPartition, PEqualNP.Defs.MinimumComplex, PEqualNP.Defs.PendantBit, PEqualNP.Defs.BorrowedCoverCircuit, PEqualNP.Defs.LineDegree, PEqualNP.Defs.CircuitMoves, PEqualNP.Defs.LowMerge, PEqualNP.Defs.NewLowMerge, PEqualNP.Defs.AffinePlane, PEqualNP.Defs.EdgeOwnership, PEqualNP.Defs.PencilGate, PEqualNP.Defs.BlindGate, PEqualNP.Defs.BicliqueBlockCost, PEqualNP.Defs.SharingOrder, PEqualNP.Defs.NotPremium, PEqualNP.Defs.NotBracket, PEqualNP.Defs.PairShadow, PEqualNP.Defs.SplitCount, PEqualNP.Defs.InvisibleWire, PEqualNP.Defs.SharedOr, PEqualNP.Defs.CleanedNonEdge, PEqualNP.Defs.MergeCost, PEqualNP.Defs.CarriedProduct, PEqualNP.Defs.TopForm, PEqualNP.Defs.SyntacticMultilinear, PEqualNP.Defs.TopFormNames, PEqualNP.Defs.HeptadCover, PEqualNP.Defs.ReadK, PEqualNP.Defs.GenericRejection, PEqualNP.Defs.CrossAnd, PEqualNP.Defs.ReadKJoin, PEqualNP.Defs.SharedBlockCost, PEqualNP.Defs.ReadTwo, PEqualNP.Defs.LratEncoding, PEqualNP.Defs.Core, PEqualNP.Defs.PointTypes, PEqualNP.Defs.FactorSubst, PEqualNP.Defs.TwoColour, PEqualNP.Defs.Represents, PEqualNP.Defs.BranchingProgram, PEqualNP.Defs, PEqualNP.Outside.ForkUpper11021]
+
+15-gate control, as reported by the replay script after checking the rejection class
+
+The mathematical checker rejected the 15-gate negative control for a statement mismatch.
+
+Joined Lean elaboration
+
+'CircuitTable11021.refutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CircuitTable11021.exactMinimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.L_meta_11021' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CircuitTable11021.minimumDepth' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Isolated mathematical verifier, refute mode, exit 124
+
+The full local replay reached its 14-minute wall-clock limit while the isolated mathematical checker was running. It returned no verdict on the refutation.

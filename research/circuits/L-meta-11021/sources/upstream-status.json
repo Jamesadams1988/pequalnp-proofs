@@ -1,0 +1,69 @@
+{
+  "observed_utc": "2026-11-26T02:52:46+00:00",
+  "desk_snapshot_utc": "2026-11-26T02:52:23.126Z",
+  "desk_export_url": "https://data.pequalnp.com/data/desk/gaps.json",
+  "paired_rows": {
+    "L-meta-11020": {
+      "listed_gap": true,
+      "pr_open": 0,
+      "pr_numbers": [],
+      "checked": false,
+      "withdrawn": false,
+      "paused": false
+    },
+    "L-meta-11021": {
+      "listed_gap": true,
+      "pr_open": 0,
+      "pr_numbers": [],
+      "checked": false,
+      "withdrawn": false,
+      "paused": false
+    }
+  },
+  "direct_positive_attempts": [
+    {
+      "number": 19150,
+      "url": "https://github.com/open-goat/pequalnp-proofs/pull/19150",
+      "head": "380b80290e29762b32d2199ac0ca6d68c405cb88",
+      "state": "closed",
+      "closed_at": "2026-11-26T02:47:57Z",
+      "merged_at": null,
+      "official_comments": [
+        {
+          "utc": "2026-11-26T01:46:02Z",
+          "author": "pequalnp-intake[bot]",
+          "notice": "checker_fault_137",
+          "url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7180106908"
+        },
+        {
+          "utc": "2026-11-26T02:10:38Z",
+          "author": "pequalnp-intake[bot]",
+          "notice": "checker_fault_124",
+          "url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7180537038"
+        },
+        {
+          "utc": "2026-11-26T02:47:56Z",
+          "author": "pequalnp-intake[bot]",
+          "notice": "stood_down_no_further_check_or_merge",
+          "url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7181128698"
+        }
+      ]
+    },
+    {
+      "number": 22499,
+      "url": "https://github.com/open-goat/pequalnp-proofs/pull/22499",
+      "head": "e47076e2ae8610e14efaa2bad8ca25e471936d55",
+      "state": "closed",
+      "closed_at": "2026-11-26T01:54:03Z",
+      "merged_at": null,
+      "official_comments": [
+        {
+          "utc": "2026-11-26T01:54:03Z",
+          "author": "pequalnp-intake[bot]",
+          "notice": "closed_after_two_20_minute_timeouts",
+          "url": "https://github.com/open-goat/pequalnp-proofs/pull/22499#issuecomment-7180258709"
+        }
+      ]
+    }
+  ]
+}
