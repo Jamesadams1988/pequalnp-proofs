@@ -33,3 +33,5 @@ The implementation stores all nonempty table entries and processes positive subs
 ## Replay
 
 Run `python3 check.py --jobs 3` in this directory. This requires a C++20 compiler and Python 3. The driver compiles in a temporary directory and compares every computed entry with `expected.txt`. Each line after a first-gate heading records the second operation, left wire, right wire and minimum boundary-separating suffix leaf count. Operations 0, 1 and 2 denote NOT, AND and OR. The first gate is wire 9. The unary rows repeat their operand.
+
+A second implementation enumerates the boundary assignments directly and computes rectangle splits in the opposite order. It can independently check all 707 entries or report the first discrepancy. [Independent verifier and replay instructions](independent/README.md)
