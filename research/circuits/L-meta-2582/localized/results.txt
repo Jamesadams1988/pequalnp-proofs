@@ -1,0 +1,4 @@
+gates 27 30
+assignments 16384 true 15926 false 458
+{'edge': 21, 'scalar': 21, 'joint': 18, 'nonedge': 28}
+failed (point index, line index) [(0, 1), (0, 3), (0, 5)]

@@ -1,0 +1,6 @@
+q=2, N=7, maximal false assignments = essential clauses = 37
+clause width -> count: {7: 2, 9: 14, 10: 21}
+q=3, N=13, maximal false assignments = essential clauses = 704
+clause width -> count: {13: 2, 16: 26, 18: 156, 19: 468, 20: 52}
+q=4, N=21, maximal false assignments = essential clauses = 25237
+clause width -> count: {21: 2, 25: 42, 28: 420, 30: 2408, 31: 5460, 32: 16800, 34: 105}

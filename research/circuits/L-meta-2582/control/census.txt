@@ -1,0 +1,6 @@
+gates | program count | scalar<=2 and joint>2 | scalar<=1 and joint>2
+1 6 0 0
+2 72 0 0
+3 1440 0 0
+4 43200 13 0
+5 1814400 1905 107

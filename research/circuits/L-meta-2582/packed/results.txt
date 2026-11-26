@@ -1,0 +1,6 @@
+ordered 9-bit AND table entries verified 262144
+q | points | all point-line pairs | edges | star gates | inflated gates | star joint-pass | inflated joint-pass | inflated scalar-pass | gate comparisons
+2 7 49 21 27 42 21 0 21 2058
+Fano truth-table assignments 16384 true 15926 false 458
+3 13 169 52 64 91 52 0 52 15379
+4 21 441 105 125 168 105 0 105 74088
