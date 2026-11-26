@@ -1,9 +1,11 @@
 {
-  "observed_utc": "2026-11-26T02:32:49.637291+00:00",
+  "observed_utc": "2026-11-26T02:46:15.702299+00:00",
   "upstream_pin": "6284ae5ebdec19cb4bce06d15e190de3560bc099",
   "dependency_count": 11,
   "finite_replay_exit": 0,
   "original_case_bodies_rebuilt": [
+    17273,
+    17275,
     17277,
     17279,
     17281,
@@ -11,5 +13,9 @@
   ],
   "local_verifier": "pending",
   "positive_verdict_url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7180537038",
-  "description": "Lean checked the 16-gate, depth-five circuit, the general depth-to-size bound, and the assembly against the nine exact premise types. The complete finite replay passed. The eleven matched upstream declarations establish the size lower bound. The fresh local rebuild of the nine proof bodies and the standalone mathematical checker have not yet completed."
+  "description": "The unmodified project mathematical checker accepted the 16-gate witness and rechecked 1,736 constants. The same witness was rejected for the 15-gate statement. The finite replay, generic depth-to-size theorem and combination against all nine exact premise types passed. Six of the nine original case bodies have freshly compiled. The full joined refutation is still awaiting its local isolated-checker replay.",
+  "upper_checker_exit": 0,
+  "upper_checker_kernel_constants": 1736,
+  "upper_15_control": "rejected for statement mismatch",
+  "handoff": "All nine cases have upstream checked hashes. At this verification point the private replay has six fresh original case modules. Two remaining unmodified sources are queued serially, and the original statements and proof bodies of the zero-pivot case are being checked across smaller modules. The interactor can resume the replay from those saved modules before recording a full local checker verdict."
 }

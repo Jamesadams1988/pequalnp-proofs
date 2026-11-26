@@ -33,10 +33,13 @@ esac
 mkdir -p "$build/PEqualNP/Outside"
 export LEAN_PATH="$build:$(lake env printenv LEAN_PATH)${LEAN_PATH:+:$LEAN_PATH}"
 if [[ $rebuild == yes ]]; then
+    python3 -B "$root/link-lean-path.py" "$build" no
     for n in "${deps[@]}"; do
         file="PEqualNP/Outside/L_meta_$n"
         lean -j1 --root="$project" -o "$build/$file.olean" "$project/$file.lean"
     done
+else
+    python3 -B "$root/link-lean-path.py" "$build" yes
 fi
 for file in upper/Upper lower/CaseAudit lower/UpperJoin lower/ExactLower lower/ExactMinimum \
             depth/TreeBase depth/Emit depth/Unfold depth/DepthBound depth/DepthJoin depth/ExactDepth; do
@@ -44,4 +47,8 @@ for file in upper/Upper lower/CaseAudit lower/UpperJoin lower/ExactLower lower/E
 done
 file=PEqualNP/Outside/L_meta_11021
 lean -j1 --root="$root/lower/src" -o "$build/$file.olean" "$root/lower/src/$file.lean"
-lean --run CheckLemma.lean PEqualNP.Outside.L_meta_11021 "$root/sources/negative.txt" refute
+checker=(lean --run CheckLemma.lean)
+if [[ -x "$project/.lake/build/bin/checklemma" ]]; then
+    checker=("$project/.lake/build/bin/checklemma")
+fi
+"${checker[@]}" PEqualNP.Outside.L_meta_11021 "$root/sources/negative.txt" refute
