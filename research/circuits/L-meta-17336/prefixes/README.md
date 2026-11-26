@@ -4,7 +4,7 @@ The graph has nine vertices and edges 04, 05, 15, 06, 26, 36, 17, 27, 47, 18, 38
 
 Fix the first gate to one of the seven values in the table. The second gate may apply NOT to any of the ten available wires or AND or OR to any two distinct available wires. The two gate outputs and all original inputs may occur arbitrarily often as leaves of an AND/OR formula for the final output. Each other internal gate has one use. This covers 100 second gates for each first gate.
 
-For every such circuit, the total size is at least 17 when the first gate is NOT or AND, and at least 16 when the first gate is OR. The unrestricted size-15 question, which permits further sharing and later NOT gates, remains open in this calculation.
+For every such circuit, the total size is at least 17 when the first gate is NOT or AND, and at least 16 when the first gate is OR. Upstream subsequently excluded size 15 even with further sharing and later NOT gates. [Accepted first-gate result](../resolution/README.md)
 
 | First gate | Minimum leaves with first gate alone | Second gates with 15 suffix leaves | With 16 | With 17 | Total gate lower bound with both prefix gates |
 |---|---:|---:|---:|---:|---:|

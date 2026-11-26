@@ -1,6 +1,6 @@
 # Fixed first gates for L-meta-17336
 
-The 12-edge function on nine inputs has a 16-gate circuit beginning with each of the gates `x5 OR x6`, `x5 OR x7`, and `x5 OR x8`. There is a 17-gate witness for each of the seven allowed first wires. These are upper bounds. The desk's negated lower-bound statement requires a witness with at most 15 gates.
+The 12-edge function on nine inputs has a 16-gate circuit beginning with each of the gates `x5 OR x6`, `x5 OR x7`, and `x5 OR x8`. There is a 17-gate witness for each of the seven allowed first wires. Upstream subsequently established a 16-gate lower bound for all seven choices. The three OR-first constructions therefore attain the exact minimum. [Lower bound and attribution](../resolution/README.md)
 
 | Value of wire 9 | Exact witness sizes |
 | --- | --- |

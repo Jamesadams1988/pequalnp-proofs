@@ -1,8 +1,10 @@
-# The missing first-gate case for a nine-input circuit
+# Exact first-gate results for a nine-input circuit
 
 James Adams (Jamesadams1988) · L-meta-17336
 
-**A counterexample must have exactly 15 gates.** The assigned statement asks for a circuit with fewer than 16 gates for a specified 12-edge function. It also fixes the first gate to NOT of input 5, or AND/OR of input 5 with input 6, 7 or 8. Pinning either input 2 or input 3 to false reduces the function to a published eight-input problem requiring at least 14 gates. Each pin saves a gate, giving the 15-gate lower bound. We have 16-gate constructions beginning with each permitted OR, and 17-gate constructions for all seven choices. Whether 15 suffices is open. [Literal desk statement](centers/statement.json) · [Lower-bound transfers](lower/README.md) · [Lean constructions](upper/README.md)
+**The three OR-first minima are exactly 16 gates.** Upstream accepted tmuniz1901-code’s proof of L-meta-17335 and withdrew L-meta-17336, the request for a counterexample with at most 15 gates. The lower bound holds for each of the seven prescribed first gates. James Adams’s circuits attain it for `x5 OR x6`, `x5 OR x7` and `x5 OR x8`. The other four choices have certified lower bound 16 and upper bound 17. [Accepted verdict](https://github.com/open-goat/pequalnp-proofs/pull/22678#issuecomment-7179688428) · [Proof and replay](resolution/README.md) · [Lean constructions](upper/README.md)
+
+The earlier fork research used restrictions of inputs 2 and 3 to bound a prospective counterexample below by 15 gates and developed the model-specific results in the table. The accepted lower bound supersedes that unrestricted bound. [Original assignment](centers/statement.json) · [Restriction proofs](lower/README.md)
 
 | Route | Result |
 |---|---|
