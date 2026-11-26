@@ -1,0 +1,87 @@
+{
+  "small_z3_tests": [
+    {
+      "inputs": 2,
+      "gates": 1,
+      "first": [
+        "AND",
+        0,
+        1
+      ],
+      "solver_status": "sat"
+    },
+    {
+      "inputs": 2,
+      "gates": 1,
+      "first": [
+        "OR",
+        0,
+        1
+      ],
+      "solver_status": "unsat"
+    },
+    {
+      "inputs": 3,
+      "gates": 1,
+      "first": [
+        "OR",
+        0,
+        1
+      ],
+      "solver_status": "unsat"
+    },
+    {
+      "inputs": 3,
+      "gates": 2,
+      "first": [
+        "OR",
+        0,
+        1
+      ],
+      "solver_status": "sat"
+    },
+    {
+      "inputs": 3,
+      "gates": 2,
+      "first": [
+        "AND",
+        0,
+        1
+      ],
+      "solver_status": "unsat"
+    },
+    {
+      "inputs": 3,
+      "gates": 3,
+      "first": [
+        "OR",
+        0,
+        1
+      ],
+      "solver_status": "sat"
+    },
+    {
+      "inputs": 3,
+      "gates": 4,
+      "first": [
+        "AND",
+        0,
+        1
+      ],
+      "solver_status": "sat"
+    }
+  ],
+  "target_witness": {
+    "gates": 63,
+    "case": 13,
+    "first": [
+      "OR",
+      1,
+      3
+    ],
+    "required_case_count": 17,
+    "boundary_tests": 737,
+    "variables": 153594,
+    "satisfied_clauses": 8472350
+  }
+}

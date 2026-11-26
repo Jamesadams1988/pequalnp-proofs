@@ -1,0 +1,25 @@
+# First-gate elimination for a simple edge function
+
+For a finite simple graph G write M(G) for the minimum size of a binary monotone circuit computing its edge function. Isolates can be suppressed. The desk's default-false output gives M(∅)=0; the single-edge case has M=1. A circuit for two or more distinct edges depends on at least three vertices.
+
+Choose a minimum circuit, remove dead gates, and simplify constants, repeated arguments and unary gates. Constants in intermediate rewritings can be propagated symbolically, since AND/OR with one constant is an alias or constant. All Boolean functions considered below vanish on the zero assignment, so any constant final result is false. An exact minimum for a nonconstant edge function has neither a constant gate nor an invalid read, and it cannot reference an inessential raw vertex: pin that input to zero and its first direct reader disappears. Thus its earliest gate g is a binary AND or OR of distinct live raw vertices v,w. For two or more edges g has a direct consumer, since the output cannot depend on only its two inputs.
+
+## Cofactor complexity
+
+The zero cofactor at v is the edge function of G−v. The one cofactor is the OR of the d(v) neighbor inputs and the edge function of H=G−N[v]. If H contains an edge, its exact minimum is d(v)+M(H). For the lower bound, pin each of the d(v) essential singleton terms to false in turn. Each pin eliminates its first direct reader, and all residuals remain nonconstant because H has an edge. For the upper bound, append one OR for each unit. If H has no edges, the high cofactor is a d(v)-input disjunction, with exact cost max(d(v)−1,0). The lower bound here follows by counting fan-in-two connections to its d(v) essential inputs. This last case avoids charging a gate to combine an empty edge function with the first unit.
+
+## First-gate cases
+
+Pin v to the neutral value of g. Its output becomes an alias, saving at least one gate. Pin v to the absorbing value. Its output and at least one direct consumer become aliases or constants, saving at least two. The same holds for w. Therefore for each possible first gate take the maximum of the four lower bounds obtained by adding savings to the appropriate cofactor costs. Taking the minimum of these first-gate bounds gives a valid lower bound for M(G). Any previously established lower bound may replace an exact residual cost.
+
+Some first gates can be pruned. If g is AND on a nonedge then g is false on every minimal true assignment. Replacing its output by false preserves every positive edge assignment and only weakens the output. Monotonicity implies the resulting circuit still computes the full edge function. That contradicts minimality. Similarly an OR of a pendant vertex and its sole neighbor may be replaced by the neighbor. These prunings allow any amount of downstream sharing.
+
+## Additional direct readers
+
+If v still matters with w pinned to g's absorbing value, then v has another direct reader h: under that pin, g itself is constant. For AND on an edge this condition holds precisely when d(v)≥2. For OR it holds precisely when v and w are adjacent or N(v) is not contained in N(w). In the nonadjacent case a neighbor of v outside N(w), together with w, witnesses the dependence. Each h is distinct from any direct consumer of g: a binary gate reading both v and g(v,w) would equal v or g by idempotence and absorption, and could be removed in the original circuit. Thus pinning v to neutral eliminates at least two gates, g and h. Pinning it to absorbing eliminates at least three, g, h, and a direct consumer of g.
+
+A further refinement applies if both v-cofactors are nonconstant. Then h cannot be the output, because its operation would give v a constant cofactor. If h uses the opposite operation from g, the neutral pin for g is absorbing at h, so one direct consumer of h disappears as well. Both pin values save at least three gates.
+
+If h uses the same operation ⋆ as g, the absorbing pin makes both gates constant. Their combined set of direct consumers has at least two distinct members. Otherwise both gates feed only one binary gate k, so k(v⋆w,v⋆t) can be replaced by v⋆k(w,t) using two gates in place of three. This uses distributivity for unlike operations and idempotent associativity for like operations. The operand t cannot depend on g in this situation, since any such dependence would provide g with another consumer. The replacement preserves the output of k and all its uses. Hence the absorbing pin eliminates at least four gates, while the neutral pin saves at least two.
+
+If A and N are valid lower bounds on the absorbing and neutral cofactors, respectively, the extra-reader bound is therefore at least min(max(A+3,N+3), max(A+4,N+2)) whenever both cofactors are nonconstant. Without the latter condition, max(A+3,N+2) remains valid. Apply the rule separately to each endpoint whose dependence test succeeds. These statements concern first-gate elimination in ordinary monotone AND/OR circuits.

@@ -1,0 +1,9 @@
+ordered desk graph matched all 51 edges
+round 0 bound 38
+round 1 bound 38
+round 2 bound 38
+round 3 bound 39
+round 4 bound 39
+round 5 bound 40
+AND bound 41 choices 51
+OR bound 40 choices 325

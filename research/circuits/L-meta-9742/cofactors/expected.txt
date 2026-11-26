@@ -1,0 +1,2 @@
+root general-pin floor 29; first-AND floor 29; first-OR floor 29
+masks 67108864; nonempty isolate-free masks 30185957; monotone size lower bound 29

@@ -1,0 +1,11 @@
+Round 0: lower bound 38; 1 terminal masks
+First-gate cases [(('AND', 39), 51), (('OR', 38), 325)]
+Round 1: lower bound 38; 53 terminal masks
+First-gate cases [(('AND', 39), 51), (('OR', 38), 276), (('OR', 39), 49)]
+Round 2: lower bound 38; 1200 terminal masks
+First-gate cases [(('AND', 40), 51), (('OR', 39), 325)]
+Round 3: lower bound 39; 15332 terminal masks
+First-gate cases [(('AND', 40), 51), (('OR', 39), 325)]
+Round 4: lower bound 39; 119508 terminal masks
+First-gate cases [(('AND', 41), 51), (('OR', 40), 325)]
+Round 5: lower bound 40; 594160 terminal masks

@@ -1,0 +1,243 @@
+{
+  "observed_utc": "2026-11-26T03:27:01+00:00",
+  "desk_updated_at": "2026-11-26T03:18:45.874Z",
+  "desk_url": "https://data.pequalnp.com/data/desk/gaps.json",
+  "upstream_pin": "51ff1cb1c0ec602ef4aeb60c50f25d37b917a035",
+  "rows": {
+    "9742": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "9741": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "9767": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "9766": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "9759": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "9757": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "972": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    },
+    "650": {
+      "listed_as_gap": true,
+      "checked": false,
+      "withdrawn": false,
+      "open_prs": []
+    }
+  },
+  "direct_pr_searches": {
+    "9741": {
+      "query": "https://api.github.com/search/issues?q=repo%3Aopen-goat%2Fpequalnp-proofs+is%3Apr+%22L-meta-9741%22+in%3Atitle%2Cbody%2Ccomments&per_page=100",
+      "count": 0,
+      "results": []
+    },
+    "9742": {
+      "query": "https://api.github.com/search/issues?q=repo%3Aopen-goat%2Fpequalnp-proofs+is%3Apr+%22L-meta-9742%22+in%3Atitle%2Cbody%2Ccomments&per_page=100",
+      "count": 0,
+      "results": []
+    },
+    "9766": {
+      "query": "https://api.github.com/search/issues?q=repo%3Aopen-goat%2Fpequalnp-proofs+is%3Apr+%22L-meta-9766%22+in%3Atitle%2Cbody%2Ccomments&per_page=100",
+      "count": 0,
+      "results": []
+    },
+    "9767": {
+      "query": "https://api.github.com/search/issues?q=repo%3Aopen-goat%2Fpequalnp-proofs+is%3Apr+%22L-meta-9767%22+in%3Atitle%2Cbody%2Ccomments&per_page=100",
+      "count": 0,
+      "results": []
+    }
+  },
+  "related_reductions": [
+    {
+      "id": "R-L-meta-650-1",
+      "parent": "L-meta-650",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_650_1.lean"
+    },
+    {
+      "id": "R-L-meta-650-517",
+      "parent": "L-meta-650",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_650_517.lean"
+    },
+    {
+      "id": "R-L-meta-650-713",
+      "parent": "L-meta-650",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_650_713.lean"
+    },
+    {
+      "id": "R-L-meta-972-5",
+      "parent": "L-meta-972",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_972_5.lean"
+    },
+    {
+      "id": "R-L-meta-972-72",
+      "parent": "L-meta-972",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_972_72.lean"
+    },
+    {
+      "id": "R-L-meta-972-713",
+      "parent": "L-meta-972",
+      "desk_state": "open",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_972_713.lean"
+    },
+    {
+      "id": "R-L-meta-972-733",
+      "parent": "L-meta-972",
+      "desk_state": "dead",
+      "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/R_meta_972_733.lean"
+    }
+  ],
+  "checked_source_receipts": {
+    "614": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_614.lean",
+      "public_checked_sha256": "181d27602f4d93df685e789e245a9f5788e52ac1a3c186ddacb62796bb731c65"
+    },
+    "1484": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_1484.lean",
+      "public_checked_sha256": "2e01af66513b0e82858f8db2df26299645a3cc20db73d851052fcb1de1eb2317"
+    },
+    "1500": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_1500.lean",
+      "public_checked_sha256": "2f08e62488d04d948f02070a8873bd405d45f2bd617315ba8c66b546838fc1ce"
+    },
+    "17597": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_17597.lean",
+      "public_checked_sha256": "a37308eb10fb8f4c419b8383bdb823a7f078fca9f7fa9cd5fdfe979e6334a610"
+    },
+    "8791": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_8791.lean",
+      "public_checked_sha256": "0ed4d419cd6ed6750f23d8691414d20c152bc6c3a4e09a0407bc0c745a9ed2c4"
+    },
+    "6392": {
+      "url": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_6392.lean",
+      "public_checked_sha256": "08446a013814fa49b3121b142b2de2422cc1d69644e095bccb149c19359f8885"
+    }
+  },
+  "verified_relations": {
+    "literal_negation": [
+      9742,
+      9741
+    ],
+    "same_edge_sets_and_budget_different_basis": [
+      9742,
+      9767
+    ],
+    "same_edges_as_9742_plus": [
+      [
+        0,
+        13
+      ]
+    ],
+    "full_graph_dnf": [
+      9757,
+      9759
+    ],
+    "full_graph_point_labels_fixed_line_index_j_maps_to_neg_j_mod13": [
+      650,
+      972
+    ]
+  },
+  "general_lower_application": {
+    "theorem": "PEqualNP.Outside.L_meta_614",
+    "graph": "literal 51-edge graph",
+    "degree_distribution": {
+      "3": 2,
+      "4": 24
+    },
+    "nonadjacent_twin_count": 0,
+    "edge_witness_counts": {
+      "9": 45,
+      "6": 6
+    },
+    "matching": [
+      [
+        0,
+        17
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        20
+      ],
+      [
+        4,
+        21
+      ],
+      [
+        5,
+        22
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        7,
+        24
+      ],
+      [
+        8,
+        25
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        12,
+        16
+      ]
+    ],
+    "minimum_vertex_cover": 13,
+    "n": 26,
+    "size_lower": 38,
+    "basis": "unrestricted native Monotone2 circuits computing the edge function on all inputs"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "row": "L-meta-614",
+    "author": "itay-raveh",
+    "merged_at": "2026-11-23T13:22:31Z",
+    "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_614.lean",
+    "pull_request": "https://github.com/open-goat/pequalnp-proofs/pull/728"
+  },
+  {
+    "row": "L-meta-1500",
+    "author": "rifter0418",
+    "merged_at": "2026-11-24T01:16:26Z",
+    "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_1500.lean",
+    "pull_request": "https://github.com/open-goat/pequalnp-proofs/pull/3057"
+  },
+  {
+    "row": "L-meta-2145",
+    "author": "willakone",
+    "merged_at": "2026-11-24T09:11:02Z",
+    "source": "https://github.com/open-goat/pequalnp-proofs/blob/51ff1cb1c0ec602ef4aeb60c50f25d37b917a035/lean/PEqualNP/Outside/L_meta_2145.lean",
+    "pull_request": "https://github.com/open-goat/pequalnp-proofs/pull/4429"
+  }
+]
