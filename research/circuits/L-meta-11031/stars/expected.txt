@@ -1,0 +1,25 @@
+47 nonempty bicliques, 0 four-cycles
+Minimum vertex cover size 5 (5 distinct minimum covers)
+Minimum sum of side cardinalities 17
+  (0,) x (4,)
+  (1,) x (5,)
+  (6,) x (0, 1, 2)
+  (7,) x (0, 3, 4)
+  (8,) x (2, 3, 5, 7)
+16 gates, verified on all 512 inputs
+  9 = AND 0 4
+  10 = AND 1 5
+  11 = OR 0 1
+  12 = OR 11 2
+  13 = AND 6 12
+  14 = OR 0 3
+  15 = OR 14 4
+  16 = AND 7 15
+  17 = OR 2 3
+  18 = OR 17 5
+  19 = OR 18 7
+  20 = AND 8 19
+  21 = OR 9 10
+  22 = OR 21 13
+  23 = OR 22 16
+  24 = OR 23 20

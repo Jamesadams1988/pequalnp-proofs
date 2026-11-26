@@ -1,0 +1,98 @@
+[
+  {
+    "row": "L-meta-534",
+    "author": "budleigh",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/630",
+    "merged_at": "2026-11-23T11:39:18Z",
+    "accepted_comments": [
+      {
+        "url": "https://github.com/open-goat/pequalnp-proofs/pull/630#issuecomment-7099900613",
+        "head_matches": true,
+        "comment_author": "LiorDagan",
+        "excerpt": "Checked on the base repository at commit `474c520b8a`.\n\n**ACCEPTED (checker exit 0)**\n\nRun: https://github.com/brilliant-hq/pequalnp"
+      }
+    ]
+  },
+  {
+    "row": "L-meta-17303",
+    "author": "MedicV2",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22583",
+    "merged_at": "2026-11-26T01:04:47Z",
+    "accepted_comments": [
+      {
+        "url": "https://github.com/open-goat/pequalnp-proofs/pull/22583#issuecomment-7179369443",
+        "head_matches": true,
+        "excerpt": "Checked on the base repository at commit `433d63b8a1`.\n\n**ACCEPTED (checker exit 0)**\n\nRun: https://github.com/open-goat/pequalnp-pr"
+      }
+    ]
+  },
+  {
+    "row": "L-meta-17305",
+    "author": "grigorescu",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22512",
+    "merged_at": "2026-11-26T00:44:50Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17307",
+    "author": "skysmith",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22510",
+    "merged_at": "2026-11-26T00:53:37Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17313",
+    "author": "zakpgrove",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22310",
+    "merged_at": "2026-11-26T00:03:00Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17315",
+    "author": "puplux",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22334",
+    "merged_at": "2026-11-26T00:02:42Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17317",
+    "author": "Nabeel-javed",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22578",
+    "merged_at": "2026-11-26T00:49:02Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17319",
+    "author": "puplux",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22276",
+    "merged_at": "2026-11-25T23:46:44Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17321",
+    "author": "Nabeel-javed",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22564",
+    "merged_at": "2026-11-26T00:53:17Z",
+    "accepted_comments": []
+  },
+  {
+    "row": "L-meta-17323",
+    "author": "tmuniz1901-code",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/22430",
+    "merged_at": "2026-11-26T00:14:44Z",
+    "accepted_comments": [
+      {
+        "url": "https://github.com/open-goat/pequalnp-proofs/pull/22430#issuecomment-7178513478",
+        "head_matches": true,
+        "excerpt": "Checked on the base repository at commit `86d5ec6ec4`.\n\n**ACCEPTED (checker exit 0)**\n\nRun: https://github.com/open-goat/pequalnp-pr"
+      }
+    ]
+  },
+  {
+    "row": "L-meta-17110",
+    "author": "danoszz",
+    "merged_pr": "https://github.com/open-goat/pequalnp-proofs/pull/21993",
+    "merged_at": "2026-11-25T22:42:48Z",
+    "accepted_comments": []
+  }
+]

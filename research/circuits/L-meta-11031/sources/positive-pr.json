@@ -1,0 +1,14 @@
+{
+  "read_at": "2026-11-26T01:25:13.270659+00:00",
+  "pr": "https://github.com/open-goat/pequalnp-proofs/pull/18201",
+  "author": "adammcarter",
+  "head": "18c89df40f00f606d7c4dd6f5266be9a85151dc5",
+  "state": "open",
+  "merged_at": null,
+  "last_intake_comment": "https://github.com/open-goat/pequalnp-proofs/pull/18201#issuecomment-7173476175",
+  "last_comment_excerpt": "Checked on the base repository at commit `7336ee358b`.\n\n**FAULT (checker exit 137)**\n\nRun: https://github.com/open-goat/pequalnp-proofs/actions/runs/45690837874\n\nThis is an automatic message. A new co",
+  "any_current_head_checker_verdict": false,
+  "run": "https://github.com/open-goat/pequalnp-proofs/actions/runs/45735203836",
+  "public_release_count": 0,
+  "public_actions_artifacts": 0
+}

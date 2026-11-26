@@ -1,0 +1,13 @@
+{
+  "id": "L-meta-11031",
+  "file": "lean/PEqualNP/Outside/L_meta_11031.lean",
+  "module": "PEqualNP.Outside.L_meta_11031",
+  "statement": "\u00ac (\u2200 t : \u2115, PEqualNP.MetaComplexity.HasCircuitSize 9 (fun x : Fin 9 \u2192 Bool => (x 0 && x 4) || (x 1 && x 5) || (x 0 && x 6) || (x 1 && x 6) || (x 2 && x 6) || (x 0 && x 7) || (x 3 && x 7) || (x 4 && x 7) || (x 2 && x 8) || (x 3 && x 8) || (x 5 && x 8) || (x 7 && x 8)) t \u2192 16 \u2264 t)",
+  "title": "False: 9 vertices, edges 0-4 1-5 0-6 1-6 2-6 0-7 3-7 4-7 2-8 3-8 5-8 7-8: its edge function needs at least 16 AND/OR/NOT gates of fan-in at most two",
+  "imports": [
+    "PEqualNP.Defs"
+  ],
+  "sketch": "A proof is one explicit counterexample to the positive statement L-meta-11030; none is expected if that statement is true.",
+  "unlocks": "One exact entry of Table 2: whether NOT gates save a gate on this nine-vertex graph's edge function, against the AND/OR star circuit.",
+  "dead": []
+}
