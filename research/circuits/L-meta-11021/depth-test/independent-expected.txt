@@ -1,0 +1,3 @@
+455 true, 57 false, 12 minimal true, 13 maximal false, 48092 depth-two tables
+OR root (all negatives forbidden): (479, 9)
+AND root (all positives required): (29, 7)

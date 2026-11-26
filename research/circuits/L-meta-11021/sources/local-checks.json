@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-11-26T02:32:49.637291+00:00",
+  "upstream_pin": "6284ae5ebdec19cb4bce06d15e190de3560bc099",
+  "dependency_count": 11,
+  "finite_replay_exit": 0,
+  "original_case_bodies_rebuilt": [
+    17277,
+    17279,
+    17281,
+    17283
+  ],
+  "local_verifier": "pending",
+  "positive_verdict_url": "https://github.com/open-goat/pequalnp-proofs/pull/19150#issuecomment-7180537038",
+  "description": "Lean checked the 16-gate, depth-five circuit, the general depth-to-size bound, and the assembly against the nine exact premise types. The complete finite replay passed. The eleven matched upstream declarations establish the size lower bound. The fresh local rebuild of the nine proof bodies and the standalone mathematical checker have not yet completed."
+}

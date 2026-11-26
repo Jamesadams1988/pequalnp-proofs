@@ -1,0 +1,9 @@
+{
+  "id": "L-meta-11021",
+  "title": "False: 9 vertices, edges 0-4 0-5 1-5 2-6 3-6 0-7 2-7 4-7 1-8 3-8 4-8 6-8: its edge function needs at least 16 AND/OR/NOT gates of fan-in at most two",
+  "file": "lean/PEqualNP/Outside/L_meta_11021.lean",
+  "imports": [
+    "PEqualNP.Defs"
+  ],
+  "statement": "¬ (∀ t : ℕ, PEqualNP.MetaComplexity.HasCircuitSize 9 (fun x : Fin 9 → Bool => (x 0 && x 4) || (x 0 && x 5) || (x 1 && x 5) || (x 2 && x 6) || (x 3 && x 6) || (x 0 && x 7) || (x 2 && x 7) || (x 4 && x 7) || (x 1 && x 8) || (x 3 && x 8) || (x 4 && x 8) || (x 6 && x 8)) t → 16 ≤ t)"
+}

@@ -1,0 +1,8 @@
+monotone gates, depth-two restricted tables 2031
+depth four fits all 12 edges and 13 maximal negatives: no
+positive input masks: 34 68 72 129 132 144 264 272 320
+negative input masks: 60 67 112 168 224 261 416
+paid NOT gates, depth-two restricted tables 2757
+depth four fits all 12 edges and 13 maximal negatives: yes
+free signed leaves, depth-two restricted tables 18074
+depth four fits all 12 edges and 13 maximal negatives: yes

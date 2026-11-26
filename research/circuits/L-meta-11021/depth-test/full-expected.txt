@@ -1,0 +1,7 @@
+positive leaves, depth-two full tables 3275
+OR root, edges covered while rejecting all false rows: 479 maximal masks, best two cover 9/12
+AND root, maximal negatives rejected while accepting all true rows: 29 maximal masks, best two cover 7/13
+signed leaves, depth-two full tables 48092
+OR root, edges covered while rejecting all false rows: 479 maximal masks, best two cover 9/12
+AND root, maximal negatives rejected while accepting all true rows: 29 maximal masks, best two cover 7/13
+Both families have the same maximal masks in both one-sided tests.

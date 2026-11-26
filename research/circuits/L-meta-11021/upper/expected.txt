@@ -1,0 +1,18 @@
+3 five-vertex covers, 24 center assignments
+16 gates at depth 5, all 512 assignments verified
+9 and 0 4
+10 or 0 1
+11 and 5 10
+12 or 2 3
+13 and 6 12
+14 or 0 2
+15 or 4 14
+16 and 7 15
+17 or 1 3
+18 or 4 6
+19 or 17 18
+20 and 8 19
+21 or 9 11
+22 or 13 16
+23 or 20 21
+24 or 22 23
